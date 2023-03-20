@@ -1,0 +1,487 @@
+/* importação de fonte */
+@import  url ( "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" );
+
+/* redefinindo regras css */
+* {
+  margem :  0 px ;
+  preenchimento :  0 px ;
+  tamanho da caixa : caixa de borda;
+  contorno : nenhum;
+  font-family :  "Roboto" , sem serifa;
+}
+
+: raiz {
+  --laranja :  # f78b00 ;
+  --blue :  # 00285f ;
+  --gray :  #ededed ; _
+}
+
+html ,
+corpo {
+  largura :  100 % ;
+  estouro-x : oculto;
+}
+
+cabeçalho {
+  largura :  100 % ;
+  altura :  500 px ;
+  plano de fundo :  var ( --orange );
+}
+
+. conteúdo {
+  largura máxima :  1000 px ;
+  largura mínima :  300 px ;
+  margem :  0 automático;
+  exibição : flexível;
+  flex-direction : coluna;
+  preenchimento :  10 px ;
+}
+
+navegação {
+  largura :  100 % ;
+  altura :  125 px ;
+  exibição : flexível;
+  flex-direction : linha;
+  itens de alinhamento : centro;
+  justificar-conteúdo : espaço-entre;
+}
+
+. marca {
+  tamanho da fonte :  24 px ;
+  cor :  var ( --blue );
+  cursor : ponteiro;
+}
+
+nav  ul {
+  exibição : flexível;
+  flex-direction : linha;
+}
+
+nav  ul  li {
+  estilo de lista : nenhum;
+  preenchimento :  10 px ;
+  cursor : ponteiro;
+}
+
+nav  ul  li  a {
+  cor :  var ( --blue );
+  decoração de texto : nenhum;
+}
+
+nav  ul  li  a : passe o mouse {
+  cor :  # 00285f83 ;
+}
+
+ botão de  navegação {
+  borda :  1 px solid var ( --blue );
+  fundo : transparente;
+  preenchimento :  8 px  40 px ;
+  cursor : ponteiro;
+  margem esquerda :  30 px ;
+  cor :  var ( --blue );
+  peso da fonte : negrito;
+  raio da borda :  4 px ;
+}
+
+ botão de  navegação : passe o mouse {
+  transição : fundo , cor 0,6 s ;
+  plano de fundo :  var ( --blue );
+  cor : branco;
+}
+
+. conteúdo . bloco de cabeçalho {
+  largura máxima :  1000 px ;
+  largura mínima :  300 px ;
+  altura :  450 px ;
+  plano de fundo :  var ( --blue );
+  raio da borda :  8 px ;
+  box-shadow :  1 px  0 px  10 px  0 px  rgba ( 0 ,  0 ,  0 ,  0.5 );
+  -webkit-box-shadow :  1 px  0 px  10 px  0 px  rgba ( 0 ,  0 ,  0 ,  0.5 );
+  -moz-box-shadow :  1 px  0 px  10 px  0 px  rgba ( 0 ,  0 ,  0 ,  0.5 );
+  posição : relativa;
+  índice z :  10 ;
+  preenchimento :  10 px ;
+}
+
+. bloco de cabeçalho  img {
+  largura :  50 % ;
+  posição : absoluto;
+  direita :  2 % ;
+  inferior :  2 % ;
+}
+
+. bloco de cabeçalho . texto {
+  posição : absoluto;
+  inferior :  30 % ;
+  esquerda :  15 % ;
+}
+
+. bloco de cabeçalho . texto  h2 {
+  cor : branco;
+  margem inferior :  20 px ;
+  alinhamento de texto : direito;
+  transformar :  traduzirX ( -20 px );
+  transição : transformar 0,5 s ;
+}
+
+. bloco de cabeçalho . texto  p {
+  largura máxima :  280 px ;
+  cor : branco;
+  alinhamento de texto : direito;
+  transformar :  traduzirX ( -20 px );
+  transição : transformar 0,4 s ;
+}
+
+/* Catálogo de produtos */
+
+seção . catálogo {
+  largura :  100 vw ;
+  preenchimento :  100 px ;
+}
+
+seção . cartão de filtro {
+  largura :  980 px ;
+  altura :  150 px ;
+  plano de fundo :  var ( --gray );
+  raio da borda :  8 px ;
+  margem :  0 automático;
+  exibição : flexível;
+  flex-direction : linha;
+  itens de alinhamento : centro;
+  justificar-conteúdo : centro;
+}
+
+. entrada de pesquisa {
+  largura :  700 px ;
+  altura :  50 px ;
+  fronteira : nenhum;
+  raio da borda :  4 px  0 px  0 px  4 px ;
+  recuo de texto :  10 px ;
+}
+
+. botão de pesquisa {
+  largura :  150 px ;
+  altura :  50 px ;
+  raio da borda :  0 px  4 px  4 px  0 px ;
+  fronteira : nenhum;
+  plano de fundo :  var ( --blue );
+  cor : branco;
+  cursor : ponteiro;
+  tamanho da fonte :  1,1 em ;
+  transição : facilidade  de 0,2 s ;
+}
+
+. botão de pesquisa : passe o mouse {
+  fundo :  #dedede ; _
+  cor :  var ( --blue );
+}
+
+. título-invólucro-catálogo {
+  margem superior :  200 px ;
+  padding-bottom :  20 px ;
+}
+
+seção . embrulho de cartão {
+  largura máxima :  1000 px ;
+  altura :  100 % ;
+  exibição : grade;
+  grid-template-columns :  repeat (preenchimento automático ,  minmax ( 270 px ,  1 fr ));
+  lacuna na grade :  30 px ;
+  padding-top :  50 px ;
+}
+
+seção . item de cartão {
+  altura :  400 px ;
+  plano de fundo :  var ( --gray );
+  raio da borda :  8 px ;
+  exibição : flexível;
+  flex-direction : coluna;
+  itens de alinhamento : centro;
+  justificar-conteúdo : espaço ao redor;
+}
+
+. conteúdo do cartão {
+  altura :  40 % ;
+  exibição : flexível;
+  flex-direction : coluna;
+  itens de alinhamento : centro;
+  justificar-conteúdo : espaço ao redor;
+}
+
+. card-item  img {
+  largura :  85 % ;
+}
+
+. item de carta  h4 {
+  largura :  90 % ;
+}
+
+. item de cartão  p {
+  largura :  90 % ;
+  estilo da fonte : itálico;
+  cor :  # 00000070 ;
+}
+
+. botão de item de cartão  {
+  largura :  90 % ;
+  preenchimento :  15 px  0 px ;
+  fronteira : nenhum;
+  plano de fundo :  var ( --blue );
+  raio da borda :  4 px ;
+  cor : branco;
+  peso da fonte : negrito;
+  tamanho da fonte :  1,1 em ;
+  cursor : ponteiro;
+  transição : facilidade  de 0,3 s ;
+  margem inferior :  10 px ;
+}
+
+. botão de item de cartão  : passe o mouse {
+  fundo :  #dedede ; _
+  cor :  var ( --blue );
+}
+
+/* Sobre */
+
+. sobre {
+  largura :  100 % ;
+  altura :  100 % ;
+  exibição : flexível;
+  itens de alinhamento : centro;
+  justificar-conteúdo : centro;
+  preenchimento :  50 px  10 px ;
+}
+
+. sobre-conteúdo {
+  largura máxima :  1000 px ;
+  largura mínima :  300 px ;
+  altura :  600 px ;
+  plano de fundo :  # dedede3b ;
+  margem :  0 automático;
+  raio da borda :  8 px ;
+  índice z :  10 ;
+  preenchimento :  10 px ;
+  exibição : flexível;
+  flex-direction : linha;
+  itens de alinhamento : centro;
+  justificar-conteúdo : espaço-entre;
+}
+
+. esquerda {
+  largura :  25 % ;
+  largura mínima :  300 px ;
+  altura :  100 % ;
+  plano de fundo :  # 000000a1 ;
+  raio da borda :  8 px ;
+}
+
+. certo {
+  largura :  65 % ;
+  altura :  100 % ;
+  exibição : flexível;
+  flex-direction : coluna;
+  itens de alinhamento : flex-start;
+  justificar-conteúdo : flex-start;
+  padding-top :  10 % ;
+}
+
+. direita  h3 {
+  alinhamento de texto : direito;
+  largura :  90 % ;
+  margem inferior :  20 px ;
+}
+
+. direito  p {
+  largura máxima :  90 % ;
+  tamanho da fonte :  1 em ;
+  espaçamento entre letras :  2 px ;
+  alinhamento de texto : direito;
+  cor :  rgba ( 0 ,  0 ,  0 ,  0,4 );
+}
+
+/* Características */
+. características {
+  largura :  100 % ;
+  altura :  100 % ;
+  plano de fundo :  var ( --gray );
+  exibição : flexível;
+  itens de alinhamento : centro;
+  justificar-conteúdo : centro;
+  preenchimento :  50 px  0 px ;
+}
+
+. características do wrapper do título {
+  preenchimento :  20 px  0 px ;
+}
+
+. bloco de cartão de recurso {
+  largura máxima :  1000 px ;
+  largura mínima :  300 px ;
+  altura :  600 px ;
+  fundo : branco;
+  margem :  0 automático;
+  raio da borda :  8 px ;
+  índice z :  10 ;
+  preenchimento :  50 px ;
+  exibição : grade;
+  grid-template-columns :  repeat (preenchimento automático ,  minmax ( 420 px ,  1 fr ));
+  lacuna na grade :  30 px ;
+}
+
+. item de cartão de recurso {
+  largura máxima :  420 px ;
+  altura :  150 px ;
+  exibição : flexível;
+  flex-direction : linha;
+  itens de alinhamento : centro;
+  justificar-conteúdo : espaço ao redor;
+  borda :  1 px sólido # dedede3b ;
+  raio da borda :  4 px ;
+}
+
+. recurso-texto-conteúdo {
+  largura máxima :  60 % ;
+  margem :  5 px ;
+}
+
+. item de cartão de recurso  img {
+  largura :  64 px ;
+  altura :  64px ; _
+}
+
+/* Rodapé */
+rodapé {
+  largura :  100 % ;
+  altura :  250 px ;
+}
+
+rodapé . principal {
+  largura :  100 % ;
+  altura :  200 px ;
+  plano de fundo :  var ( --orange );
+  preenchimento :  20 px  10 px ;
+}
+
+. links de rodapé {
+  largura máxima :  1000 px ;
+  largura mínima :  300 px ;
+  exibição : flexível;
+  flex-direction : linha;
+  justificar-conteúdo : espaço-entre;
+  margem superior :  20 px ;
+}
+
+. empresa de rodapé ,
+. rodapé-aluguer ,
+. rodapé-contato ,
+. rodapé-social {
+  cor : branco;
+  altura :  100 % ;
+  altura mínima :  100 px ;
+}
+
+. links de rodapé  h4 {
+  margem inferior :  10 px ;
+}
+
+. links de rodapé {
+  margem inferior :  8 px ;
+}
+
+. principal . rodapé- img social  {
+  largura :  32 px ;
+  altura :  32 px ;
+}
+
+rodapé . último {
+  largura :  100 % ;
+  altura :  50 px ;
+  plano de fundo :  var ( --blue );
+  cor : branco;
+  exibição : flexível;
+  itens de alinhamento : centro;
+  justificar-conteúdo : centro;
+}
+
+/* Ajustes responsivos */
+
+@media ( largura máxima :  576 px ) {
+  nav  ul  li {
+    exibição : nenhum;
+  }
+
+  . bloco de cabeçalho  img {
+    largura :  70 % ;
+    posição : absoluto;
+    direita :  16 % ;
+    superior :  30 % ;
+  }
+
+  . bloco de cabeçalho . texto {
+    posição : absoluto;
+    inferior :  10 % ;
+    esquerda :  15 ;
+  }
+
+  seção . cartão de filtro {
+    largura :  390 px ;
+    preenchimento :  0 px  10 px ;
+  }
+
+  . entrada de pesquisa {
+    largura máxima :  700 px ;
+    largura mínima :  240 px ;
+  }
+
+  . botão de pesquisa {
+    largura máxima :  150 px ;
+    largura mínima :  80 px ;
+  }
+
+  . sobre {
+    margem superior :  100 px ;
+  }
+
+  . título-invólucro-sobre {
+    margem inferior :  20 px ;
+  }
+  . sobre-conteúdo {
+    flex-direction : coluna;
+    altura :  100 % ;
+  }
+  . esquerda {
+    exibição : nenhum;
+  }
+  . certo {
+    largura :  90 % ;
+  }
+
+  . direito  p {
+    largura :  100 % ;
+    margem :  0 px ;
+    alinhamento de texto : esquerda;
+  }
+
+  . características {
+    altura :  100 % ;
+  }
+
+  . bloco de cartão de recurso {
+    altura :  100 % ;
+    exibição : flexível;
+    flex-direction : coluna;
+  }
+
+  rodapé {
+    altura :  100 % ;
+  }
+
+  rodapé . principal {
+    altura :  100 % ;
+  }
+
+  . links de rodapé {
+    flex-direction : coluna;
+    padding-esquerda :  10 % ;
+  }
+}
